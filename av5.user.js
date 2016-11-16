@@ -22,7 +22,7 @@ textarea.on('input',function(e){
        $('.save').css('display','none');
      }
      else{
-       $('.save').css('display','inline-block');
+       $('.save').css('display','');
      }
    }
 })();
