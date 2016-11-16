@@ -9,8 +9,8 @@
 // @version     1
 // @grant       none
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
-// @updateURL   https://raw.githubusercontent.com/Rosshill98/AVoid5/master/av5.js
-// @downloadURL   https://raw.githubusercontent.com/Rosshill98/AVoid5/master/av5.js
+// @updateURL   https://github.com/Rosshill98/AVoid5/raw/master/av5.js
+// @downloadURL https://github.com/Rosshill98/AVoid5/raw/master/av5.js
 // ==/UserScript==
 
 var textarea = $('.md textarea');
