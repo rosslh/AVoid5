@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        av5
+// @name        aVoid5
 // @namespace   http://rosshill.ca/
 // @description ...
 // @author      Ross Hill
