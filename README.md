@@ -1,4 +1,4 @@
-Robin-Flair
+AVoid5
 ===
 
 This script blocks you from commenting on reddit with the letter 'e'.
