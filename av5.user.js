@@ -7,22 +7,24 @@
 // @include     https://np.reddit.com/*
 // @include     https://m.reddit.com/*
 // @version     1
-// @grant       none
+// @grant       sandbox
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 // @updateURL   https://github.com/Rosshill98/AVoid5/raw/master/av5.js
 // @downloadURL https://github.com/Rosshill98/AVoid5/raw/master/av5.js
 // ==/UserScript==
 
-var textarea = $('.md textarea');
-var content = textarea.val();
-textarea.on('input',function(e){
+var textarea = $('.commentarea .md textarea');
+var content;
+var a = textarea.on('input',update);
+var i = setInterval(update,1000);
+function update(){
    content = textarea.val();
    if(content != null){
      if (content.includes('e') || content.includes('E')){
-       $('.save').css('display','none');
-     }
-     else{
-       $('.save').css('display','');
-     }
+       $('.save').css('background-color','#DD0000');
+       $('.save').css('color','white');
    }
-})();
+     else
+       $('.save').removeAttr( 'style' );
+   }
+}
