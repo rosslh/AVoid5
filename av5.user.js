@@ -14,6 +14,8 @@
 // ==/UserScript==
 
 var textarea = $('.commentarea .md textarea');
+var warning = $('.commentarea .status');
+var save = $('.save');
 var content;
 var a = textarea.on('input',update);
 var i = setInterval(update,1000);
@@ -21,10 +23,15 @@ function update(){
    content = textarea.val();
    if(content != null){
      if (content.includes('e') || content.includes('E')){
-       $('.save').css('background-color','#DD0000');
-       $('.save').css('color','white');
+       save.css('background-color','#DD0000');
+       save.css('color','white');
+       warning.css('color','red');
+       warning.html('Warning: FifthGlyph found');
    }
-     else
-       $('.save').removeAttr( 'style' );
+     else{
+       save.removeAttr( 'style' );
+       warning.removeAttr( 'style' );
+       warning.html('');
    }
+  }
 }
