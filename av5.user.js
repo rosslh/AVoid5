@@ -3,10 +3,10 @@
 // @namespace   http://rosshill.ca/
 // @description ...
 // @author      Ross Hill
-// @include     https://www.reddit.com/*
-// @include     https://np.reddit.com/*
-// @include     https://m.reddit.com/*
-// @version     1.3
+// @include     https://www.reddit.com/*/*/comments/*
+// @include     https://np.reddit.com/*/*/comments/*
+// @include     https://m.reddit.com/*/*/comments/*
+// @version     1.5
 // @grant       sandbox
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 // @updateURL   https://github.com/Rosshill98/aVoid5/raw/master/av5.user.js
@@ -30,7 +30,7 @@ function update(){
        save.css('background-color','#DD0000');
        save.css('color','white');
        warning.css('color','red');
-       warning.html('Warning: FifthGlyph found');
+       warning.html('Warning: Fifthglyph found');
      }
      else{
        save.removeAttr('style');
