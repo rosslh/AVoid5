@@ -14,12 +14,16 @@
 // ==/UserScript==
 
 var textarea = $('.commentarea .md textarea');
-var warning = $('.commentarea .status');
-var save = $('.save');
+var annoyance = $('.usertext-edit.md-container[style="display: none"]').remove();
 var content;
+var save;
+var warning;
 var a = textarea.on('input',update);
-var i = setInterval(update,1000);
+var i = setInterval(update,50);
 function update(){
+   warning = $('.commentarea .status');
+   save = $('.usertext-buttons .save');
+   textarea = $('textarea:focus');
    content = textarea.val();
    if(content != null){
      if (content.includes('e') || content.includes('E')){
@@ -27,10 +31,10 @@ function update(){
        save.css('color','white');
        warning.css('color','red');
        warning.html('Warning: FifthGlyph found');
-   }
+     }
      else{
-       save.removeAttr( 'style' );
-       warning.removeAttr( 'style' );
+       save.removeAttr('style');
+       warning.removeAttr('style');
        warning.html('');
    }
   }
