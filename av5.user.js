@@ -6,7 +6,7 @@
 // @include     https://www.reddit.com/*/*/comments/*
 // @include     https://np.reddit.com/*/*/comments/*
 // @include     https://m.reddit.com/*/*/comments/*
-// @version     1.5.1
+// @version     1.5.2
 // @grant       sandbox
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 // @updateURL   https://github.com/Rosshill98/aVoid5/raw/master/av5.user.js
@@ -14,7 +14,6 @@
 // ==/UserScript==
 
 var textarea = $('.commentarea .md textarea');
-var annoyance = $('.usertext-edit.md-container[style="display: none"]').remove();
 var content;
 var save;
 var warning;
