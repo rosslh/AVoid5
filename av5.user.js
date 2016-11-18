@@ -9,8 +9,8 @@
 // @version     1.3
 // @grant       sandbox
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
-// @updateURL   https://github.com/Rosshill98/AVoid5/raw/master/av5.js
-// @downloadURL https://github.com/Rosshill98/AVoid5/raw/master/av5.js
+// @updateURL   https://github.com/Rosshill98/aVoid5/raw/master/av5.user.js
+// @downloadURL https://github.com/Rosshill98/AVoid5/raw/master/av5.user.js
 // ==/UserScript==
 
 var textarea = $('.commentarea .md textarea');
