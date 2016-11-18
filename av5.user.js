@@ -6,7 +6,7 @@
 // @include     https://www.reddit.com/*
 // @include     https://np.reddit.com/*
 // @include     https://m.reddit.com/*
-// @version     1
+// @version     1.3
 // @grant       sandbox
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 // @updateURL   https://github.com/Rosshill98/AVoid5/raw/master/av5.js
