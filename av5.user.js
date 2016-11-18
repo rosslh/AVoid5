@@ -6,7 +6,7 @@
 // @include     https://www.reddit.com/*/*/comments/*
 // @include     https://np.reddit.com/*/*/comments/*
 // @include     https://m.reddit.com/*/*/comments/*
-// @version     1.5
+// @version     1.5.1
 // @grant       sandbox
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 // @updateURL   https://github.com/Rosshill98/aVoid5/raw/master/av5.user.js
@@ -18,7 +18,7 @@ var annoyance = $('.usertext-edit.md-container[style="display: none"]').remove()
 var content;
 var save;
 var warning;
-var a = textarea.on('input',update);
+var b = textarea.on('input',update);
 var i = setInterval(update,50);
 function update(){
    warning = $('.commentarea .status');
